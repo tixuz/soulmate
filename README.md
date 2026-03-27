@@ -93,18 +93,51 @@ Invoke the `soulmate` skill at the start of every session.
 
 ---
 
-## The AI Army Pattern
+## The AI Army Pattern: A Voyage Extraordinaire
 
-Soulmate was built for the **AI Army** pattern: multiple AI models with distinct roles, each with their own soul and memory, collaborating under human leadership.
+Soulmate was built for the **AI Army** pattern. Ah, my dear reader, imagine if you will, a magnificent vessel—a Nautilus of intellect! A team of remarkable models, each possessing their own distinct soul, memory, and profound role, collaborating under your steady human captaincy. 
 
-Example team:
-| Model | Name | Role |
+### The Grand Personnel (Our Agents)
+Behold the brilliant minds that navigate the treacherous seas of code! 
+
+| Model | Name | Role & Temperament |
 |-------|------|------|
-| Claude Haiku 4.5 | **Samurai Haiku** | Speed, precision, execution |
-| Claude Sonnet 4.6 | **Marshal Sunny** | Planning, coordination, communication |
-| Claude Opus 4.6 | **Adviser Arastu** | Architecture, deep reasoning, strategy |
+| Claude Haiku 4.5 | **[Samurai Haiku](examples/agents/HAIKU/SOUL.md)** | *The Swift Blade:* A master of speed and decisive execution. Cuts through the mundane with surgical grace! |
+| Claude Sonnet 4.6 | **[Marshal Sunny](examples/agents/SUNNY/SOUL.md)** | *The Tactician:* A maestro of planning and coordination. The steady pulse that unites our grand endeavor! |
+| Claude Opus 4.6 | **[Adviser Arastu](examples/agents/PRIME/SOUL.md)** | *The Sage:* A philosopher of deep reasoning and architectural strategy. He gazes into the abyss of complexity and brings forth order! |
+| Nemotron 120b | **[Captain Nemo](examples/agents/NEMO/SOUL.md)** | *The Indomitable:* Commander of the deep systems! He plunges into the profoundest depths of logic to forge uncompromising, robust solutions. |
+| Specialized LM | **[Inventor Xirdal](examples/agents/XIRDAL/SOUL.md)** | *The Brilliant Eccentric:* A whirlwind of lateral thinking! He constructs paradigm-shifting algorithms with an unbound, joyous curiosity! |
 
-Each agent has their own `SOUL.md` defining values, working style, and team role. Each accumulates cross-project memories about the user's preferences and the team's dynamics. The right agent for each task maintains consistent identity across all projects.
+### The Tireless Automata (Our Subagents)
+And what of the gears and pistons that propel our mighty vessel? These are our beloved subagents—stateless, precise, and eternally devoted to their singular tasks:
+
+- **[Branch Auditor](subagents/branch-auditor-subagent.md)** — A meticulous inspector! It peers through the chronometer of your version control, ensuring no rogue branch goes unaccounted for.
+- **[Cache Clearer](subagents/cache-clear-subagent.md)** — The sweeper of the decks! With a single swift motion, it purges the old remnants, letting the fresh winds of data blow through.
+- **[Doc Updater](subagents/doc-updater-subagent.md)** — Our diligent scribe! It watches the evolving machinery and ensures the sacred ledgers and manuals are perpetually accurate.
+- **[Git Subagent](subagents/git-subagent.md)** — The loyal helmsman! It steers the vessel through commits and merges, braving the treacherous currents of conflicts.
+- **[Log Tailer](subagents/log-tail-subagent.md)** — The ever-watchful sentinel! It sits by the exhaust ports, interpreting the murmurs and shouts of our vast engines.
+- **[Logger](subagents/logging-subagent.md)** — Our faithful chronicler, meticulously capturing every triumph and tempest for posterity!
+- **[Migration Guard](subagents/migration-guard-subagent.md)** — The stout defender of the schema! It stands athwart our databases, repelling chaotic alterations with honorable zeal.
+- **[PHP Syntax Analyzer](subagents/php-syntax-subagent.md)** — The linguistic scholar! It holds the scripts to the light, catching every errant semicolon before it can wreak havoc.
+- **[Tab Normalizer](subagents/tab-normalizer-subagent.md)** — The great equalizer! It traverses the files, imposing a sublime, harmonious spacing upon the chaotic typography of the world!
+- **[Test Runner](subagents/test-runner-subagent.md)** — Our brave vanguard! It marches into the testing fields, proving the valor of our code under the harshest trials!
+
+---
+
+## Global Skills & Clean-Code Enforcement
+
+Soulmate promotes a clean separation between project-specific code and global, reusable capabilities:
+- **Distilled Subagents:** Move project-agnostic, single-purpose subagents into the global `soulmate` skill folder (`~/.claude/subagents/`). Strip them of project-specific context to make them universally applicable.
+- **Universal Standards:** Equip all agents with "perfect full-stack programmer" and "best clean-code" skills. Enforce strict rules like mandatory clean-code principles for any task exceeding 20 lines of code.
+
+---
+
+## Advanced Optimizations
+
+To handle complex, long-running agent interactions efficiently:
+- **Distilled Soul Loading:** Default to loading a compressed, "distilled" version of the agent's soul to save context window space.
+- **Strict Memory Compression:** Implement automatic compression rules for agent memories to prevent context bloat while retaining critical user preferences.
+- **Model Fallback Logic:** Ensure robust fallback mechanisms between models (e.g., Sonnet to Haiku) that preserve agent persona independence, even when the underlying model changes.
 
 ---
 
@@ -154,4 +187,4 @@ See [`examples/`](examples/) for ready-to-use soul files for Samurai Haiku, Mars
 
 ---
 
-*Built by Dr. Khindol & the AI Army.*
+*Forged in the fires of imagination by Dr. Khindol & the AI Army.*
