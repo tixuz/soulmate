@@ -1,8 +1,15 @@
 # Soulmate 🤝
 
-**Persistent agent identity for Claude Code.** Give your AI agents a soul — not a costume.
+> *A SOUL.md skill for Claude Code — persistent identity, cross-project memory, and character for your AI agents.*
+> *No Docker. No infrastructure. One Markdown file.*
 
-Soulmate is a Claude Code skill that loads an agent's personality, values, and cross-project memories at the start of every session. It draws a clean line between two kinds of AI workers:
+**Give your AI agents a soul — not a costume.**
+
+If OpenClaw is the Nautilus — a magnificent vessel of many interconnected systems — Soulmate is the soul Nemo carries when he steps ashore. Just `SOUL.md` + `MEMORY.md`, loaded at session start via a single Claude Code skill. Your agent remembers who they are, what they've learned, and who they work with. Across every project. Forever.
+
+<!-- SEO: claude code agent identity, SOUL.md, persistent agent memory, claude code skill, AI agent personality, agent soul file, openclaw alternative, claude agent soul, claude memory skill -->
+
+Soulmate draws a clean line between two kinds of AI workers:
 
 - **Agents** (`~/.claude/agents/`) — named, opinionated, persistent. They remember. They have a point of view. They grow.
 - **Subagents** (`~/.claude/subagents/`) — stateless robots. System prompt in, output out. No memory, no identity.
@@ -11,7 +18,9 @@ Soulmate is a Claude Code skill that loads an agent's personality, values, and c
 
 ## The Problem It Solves
 
-When you work with multiple Claude models across multiple projects, each session starts from zero. The Sonnet you used yesterday doesn't remember it prefers clean architecture over clever tricks. The Haiku you assigned to execute tasks doesn't carry forward your feedback about being too verbose.
+When you work with multiple Claude Code agents across multiple projects, each session starts from zero. The Sonnet you used yesterday doesn't remember it prefers clean architecture over clever tricks. The Haiku you assigned to execute tasks doesn't carry forward your feedback about being too verbose.
+
+OpenClaw solved this — but it requires Docker, a running server, and a messaging platform integration. Soulmate takes the soul out of that ship and puts it in your pocket: a single `SKILL.md` you copy once, and agent identity that persists forever.
 
 Soulmate fixes this. Each agent loads their own `SOUL.md` (who they are) and `memories/` (what they've learned) at session start. Personality is consistent. Cross-project learning persists. The agent you work with on project A is the same agent — same values, same memory — on project B.
 
