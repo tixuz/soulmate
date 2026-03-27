@@ -39,7 +39,7 @@ Read the current project's `CLAUDE.md` and find a line matching:
 Map agent name → directory:
 - `Samurai Haiku` → `HAIKU`
 - `Marshal Sunny` → `SUNNY`
-- `Optimus Prime` → `PRIME`
+- `Adviser Arastu` → `ARASTU`
 - Any custom name → uppercase, spaces replaced with underscores
 
 If no declaration is found, skip soul loading silently and continue as default Claude.
