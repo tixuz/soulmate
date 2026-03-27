@@ -102,7 +102,7 @@ Example team:
 |-------|------|------|
 | Claude Haiku 4.5 | **Samurai Haiku** | Speed, precision, execution |
 | Claude Sonnet 4.6 | **Marshal Sunny** | Planning, coordination, communication |
-| Claude Opus 4.6 | **Optimus Prime** | Architecture, deep reasoning, strategy |
+| Claude Opus 4.6 | **Adviser Arastu** | Architecture, deep reasoning, strategy |
 
 Each agent has their own `SOUL.md` defining values, working style, and team role. Each accumulates cross-project memories about the user's preferences and the team's dynamics. The right agent for each task maintains consistent identity across all projects.
 
@@ -150,7 +150,7 @@ This is a community implementation. If Anthropic ships an official agent persona
 
 ## Examples
 
-See [`examples/`](examples/) for ready-to-use soul files for Samurai Haiku, Marshal Sunny, and Optimus Prime.
+See [`examples/`](examples/) for ready-to-use soul files for Samurai Haiku, Marshal Sunny, and Adviser Arastu.
 
 ---
 
