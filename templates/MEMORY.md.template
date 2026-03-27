@@ -1,0 +1,33 @@
+# {Agent Name} — Memory Index
+
+Cross-project memories for {Agent Name}. This file is the index; each entry points to a file
+in `memories/`. Read the index first, load only what's relevant to the current session.
+
+## User & Collaboration
+
+| File | Summary |
+|------|---------|
+| `memories/user_profile.md` | Who the user is, role, expertise, preferences |
+| `memories/working_style.md` | How the user likes to collaborate |
+
+## Team & Relationships
+
+| File | Summary |
+|------|---------|
+| `memories/team_dynamics.md` | Roles, relationships between agents and humans |
+
+## Technical Preferences
+
+| File | Summary |
+|------|---------|
+| (add entries as memories are written) | |
+
+## Feedback Received
+
+| File | Summary |
+|------|---------|
+| (add entries as feedback memories are written) | |
+
+---
+
+*Last updated: {YYYY-MM-DD}*
