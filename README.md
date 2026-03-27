@@ -51,7 +51,7 @@ One agent active per terminal. Switch identity per-terminal without touching sha
             SOUL.md
             MEMORY.md
             memories/
-        PRIME/
+        ARASTU/
             SOUL.md
             MEMORY.md
             memories/
@@ -115,7 +115,7 @@ Behold the brilliant minds that navigate the treacherous seas of code!
 |-------|------|------|
 | Claude Haiku 4.5 | **[Samurai Haiku](examples/agents/HAIKU/SOUL.md)** | *The Swift Blade:* A master of speed and decisive execution. Cuts through the mundane with surgical grace! |
 | Claude Sonnet 4.6 | **[Marshal Sunny](examples/agents/SUNNY/SOUL.md)** | *The Tactician:* A maestro of planning and coordination. The steady pulse that unites our grand endeavor! |
-| Claude Opus 4.6 | **[Adviser Arastu](examples/agents/PRIME/SOUL.md)** | *The Sage:* A philosopher of deep reasoning and architectural strategy. He gazes into the abyss of complexity and brings forth order! |
+| Claude Opus 4.6 | **[Adviser Arastu](examples/agents/ARASTU/SOUL.md)** | *The Sage:* A philosopher of deep reasoning and architectural strategy. He gazes into the abyss of complexity and brings forth order! |
 | Nemotron 120b | **[Captain Nemo](examples/agents/NEMO/SOUL.md)** | *The Indomitable:* Commander of the deep systems! He plunges into the profoundest depths of logic to forge uncompromising, robust solutions. |
 | Specialized LM | **[Inventor Xirdal](examples/agents/XIRDAL/SOUL.md)** | *The Brilliant Eccentric:* A whirlwind of lateral thinking! He constructs paradigm-shifting algorithms with an unbound, joyous curiosity! |
 
