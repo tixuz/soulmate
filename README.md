@@ -20,16 +20,21 @@ Soulmate fixes this. Each agent loads their own `SOUL.md` (who they are) and `me
 ## How It Works
 
 ```
-Project CLAUDE.md declares:
-  Agent: **Active:** Marshal Sunny
+Terminal env var (per-session, per-terminal):
+  export CLAUDE_ACTIVE_AGENT="Marshal Sunny"
 
-→ Soulmate reads ~/.claude/agents/SUNNY/SOUL.md
+  OR project CLAUDE.md declares (shared fallback):
+  **Active:** Marshal Sunny (claude-sonnet-4-6)
+  **Team:** Marshal Sunny, Captain Step
+
+→ Soulmate checks $CLAUDE_ACTIVE_AGENT first, falls back to CLAUDE.md
+→ Reads ~/.claude/agents/SUNNY/SOUL.md
 → Claude adopts Marshal Sunny's identity for the session
 → Loads relevant cross-project memories
-→ "Marshal Sunny online. 4 memories loaded."
+→ "Marshal Sunny online. 4 memories loaded. Team: Marshal Sunny, Captain Step."
 ```
 
-That's it. One declaration in your project. Automatic identity every session.
+One agent active per terminal. Switch identity per-terminal without touching shared files.
 
 ---
 
@@ -79,10 +84,16 @@ cp templates/SOUL.md.template ~/.claude/agents/MY_AGENT/SOUL.md
 # edit it
 ```
 
-**4. Declare the active agent in your project's CLAUDE.md:**
+**4. Declare the active agent in your project's CLAUDE.md** (shared fallback):
 ```markdown
 ## Agent
 **Active:** My Agent (claude-sonnet-4-6)
+**Team:** My Agent, Other Agent
+```
+
+Or set per-terminal (overrides CLAUDE.md, doesn't affect teammates):
+```bash
+export CLAUDE_ACTIVE_AGENT="My Agent"
 ```
 
 **5. Add to global `~/.claude/CLAUDE.md`:**
